@@ -1,0 +1,15 @@
+# Tells Flux to apply the ./local folder (including this file). Applied by hand once; after that Flux manages it from Git.
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: gitops-poc
+  namespace: flux-system
+spec:
+  interval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: gitops-flux
+  path: ./local
+  prune: true
+  wait: true
+  timeout: 2m
