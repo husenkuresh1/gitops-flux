@@ -7,7 +7,7 @@ metadata:
     app: web
 spec:
   # Try changing this through "Edit in Git" in Headlamp.
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: web
