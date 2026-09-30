@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  namespace: poc
+  labels:
+    app: web
+spec:
+  # Try changing this through "Edit in Git" in Headlamp.
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: podinfo
+          image: ghcr.io/stefanprodan/podinfo:6.7.1
+          ports:
+            - containerPort: 9898
+          envFrom:
+            - configMapRef:
+                name: web-config
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 9898
+          resources:
+            requests:
+              cpu: 5m
+              memory: 16Mi
+            limits:
+              memory: 64Mi
