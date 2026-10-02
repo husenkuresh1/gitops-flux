@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-statefulset
+  namespace: web
+  annotations:
+    demo.gitops/stands-in-for: StatefulSet
+data:
+  note: Placeholder for a StatefulSet; the demo cluster does not run its controller.

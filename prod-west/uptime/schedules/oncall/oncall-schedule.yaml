@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: oncall-schedule
+  namespace: uptime
+  annotations:
+    demo.gitops/stands-in-for: Schedule
+data:
+  note: Placeholder for a Schedule; the demo cluster does not run its controller.

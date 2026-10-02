@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: certs-2
+  namespace: alerts
+type: Opaque
+stringData:
+  password: not-a-real-secret

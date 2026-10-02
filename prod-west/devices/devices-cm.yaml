@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: devices
+  namespace: devices
+data:
+  greeting: hello from devices

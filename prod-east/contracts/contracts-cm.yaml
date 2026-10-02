@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: contracts
+  namespace: contracts
+data:
+  greeting: hello from contracts

@@ -1,0 +1,61 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: primary
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/husenkuresh1/gitops-flux
+  ref:
+    branch: main
+  ignore: |
+    # exclude all
+    /*
+    # include staging dir
+    !/staging
+    # exclude file names starting with '1-'
+    /staging/**/1-*
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: secondary
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/husenkuresh1/gitops-flux
+  ref:
+    branch: main
+  ignore: |
+    # exclude all
+    /*
+    # include staging's file names starting with '1-'
+    !/staging/**/1-*
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: primary
+  namespace: flux-system
+spec:
+  interval: 10m
+  path: staging
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: primary
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: secondary
+  namespace: flux-system
+spec:
+  dependsOn:
+  - name: primary
+  interval: 10m
+  path: staging
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: secondary

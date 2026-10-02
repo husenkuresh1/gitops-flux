@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: stream-3
+  namespace: stream
+type: Opaque
+stringData:
+  password: not-a-real-secret

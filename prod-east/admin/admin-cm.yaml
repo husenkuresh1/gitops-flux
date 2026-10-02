@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: admin
+  namespace: admin
+data:
+  greeting: hello from admin

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: signup-2
+  namespace: signup
+data:
+  greeting: hello from signup

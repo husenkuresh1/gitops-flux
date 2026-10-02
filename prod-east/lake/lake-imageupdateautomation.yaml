@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lake-imageupdateautomation
+  namespace: lake
+  annotations:
+    demo.gitops/stands-in-for: ImageUpdateAutomation
+data:
+  note: Placeholder for a ImageUpdateAutomation; the demo cluster does not run its
+    controller.

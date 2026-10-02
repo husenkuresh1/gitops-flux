@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: portal
+  namespace: portal
+data:
+  greeting: hello from portal

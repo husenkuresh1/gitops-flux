@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: recommend-persistentvolumeclaim
+  namespace: recommend
+  annotations:
+    demo.gitops/stands-in-for: PersistentVolumeClaim
+data:
+  note: Placeholder for a PersistentVolumeClaim; the demo cluster does not run its
+    controller.

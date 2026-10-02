@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: forms-3
+  namespace: forms
+data:
+  greeting: hello from forms

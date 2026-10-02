@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backup-httproute
+  namespace: backup
+  annotations:
+    demo.gitops/stands-in-for: HTTPRoute
+data:
+  note: Placeholder for a HTTPRoute; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backup-httproute-2
+  namespace: backup
+  annotations:
+    demo.gitops/stands-in-for: HTTPRoute
+data:
+  note: Placeholder for a HTTPRoute; the demo cluster does not run its controller.

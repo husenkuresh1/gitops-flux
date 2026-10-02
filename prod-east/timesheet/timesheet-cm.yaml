@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: timesheet
+  namespace: timesheet
+data:
+  greeting: hello from timesheet

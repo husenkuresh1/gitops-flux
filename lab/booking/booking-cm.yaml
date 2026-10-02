@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: booking
+  namespace: booking
+data:
+  greeting: hello from booking

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: projects-recurringjob
+  namespace: projects
+  annotations:
+    demo.gitops/stands-in-for: RecurringJob
+data:
+  note: Placeholder for a RecurringJob; the demo cluster does not run its controller.

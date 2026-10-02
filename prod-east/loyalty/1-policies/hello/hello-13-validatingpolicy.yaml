@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-validatingpolicy-13
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: ValidatingPolicy
+data:
+  note: Placeholder for a ValidatingPolicy; the demo cluster does not run its controller.

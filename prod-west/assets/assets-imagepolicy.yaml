@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: assets-imagepolicy
+  namespace: assets
+  annotations:
+    demo.gitops/stands-in-for: ImagePolicy
+data:
+  note: Placeholder for a ImagePolicy; the demo cluster does not run its controller.

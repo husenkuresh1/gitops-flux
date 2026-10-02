@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lake
+  namespace: lake
+data:
+  greeting: hello from lake

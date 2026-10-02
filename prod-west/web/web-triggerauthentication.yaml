@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-triggerauthentication
+  namespace: web
+  annotations:
+    demo.gitops/stands-in-for: TriggerAuthentication
+data:
+  note: Placeholder for a TriggerAuthentication; the demo cluster does not run its
+    controller.

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: support
+  namespace: support
+data:
+  greeting: hello from support

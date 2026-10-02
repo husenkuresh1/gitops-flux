@@ -1,0 +1,393 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-networkpolicy
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: NetworkPolicy
+data:
+  note: Placeholder for a NetworkPolicy; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-networkpolicy-2
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: NetworkPolicy
+data:
+  note: Placeholder for a NetworkPolicy; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-networkpolicy-3
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: NetworkPolicy
+data:
+  note: Placeholder for a NetworkPolicy; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-resourcequota
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ResourceQuota
+data:
+  note: Placeholder for a ResourceQuota; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-clusterrole
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ClusterRole
+data:
+  note: Placeholder for a ClusterRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-clusterrole-2
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ClusterRole
+data:
+  note: Placeholder for a ClusterRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-clusterrole-3
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ClusterRole
+data:
+  note: Placeholder for a ClusterRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-clusterrolebinding
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ClusterRoleBinding
+data:
+  note: Placeholder for a ClusterRoleBinding; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-clusterrolebinding-2
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ClusterRoleBinding
+data:
+  note: Placeholder for a ClusterRoleBinding; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-2
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-3
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-4
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-5
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-6
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-serviceaccount
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ServiceAccount
+data:
+  note: Placeholder for a ServiceAccount; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-service
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Service
+data:
+  note: Placeholder for a Service; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-deployment
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Deployment
+data:
+  note: Placeholder for a Deployment; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-7
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-serviceaccount-2
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ServiceAccount
+data:
+  note: Placeholder for a ServiceAccount; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-deployment-2
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Deployment
+data:
+  note: Placeholder for a Deployment; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-8
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-serviceaccount-3
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ServiceAccount
+data:
+  note: Placeholder for a ServiceAccount; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-deployment-3
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Deployment
+data:
+  note: Placeholder for a Deployment; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-9
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-10
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-11
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-serviceaccount-4
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ServiceAccount
+data:
+  note: Placeholder for a ServiceAccount; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-service-2
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Service
+data:
+  note: Placeholder for a Service; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-service-3
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Service
+data:
+  note: Placeholder for a Service; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-deployment-4
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Deployment
+data:
+  note: Placeholder for a Deployment; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-12
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-13
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-serviceaccount-5
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ServiceAccount
+data:
+  note: Placeholder for a ServiceAccount; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-deployment-5
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Deployment
+data:
+  note: Placeholder for a Deployment; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-customresourcedefinition-14
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-serviceaccount-6
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: ServiceAccount
+data:
+  note: Placeholder for a ServiceAccount; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-deployment-6
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Deployment
+data:
+  note: Placeholder for a Deployment; the demo cluster does not run its controller.

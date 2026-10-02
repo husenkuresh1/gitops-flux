@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cron
+  namespace: cron
+type: Opaque
+stringData:
+  password: not-a-real-secret

@@ -1,0 +1,28 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: lab-repo
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/husenkuresh1/gitops-flux
+  ref:
+    branch: main
+  ignore: |
+    # exclude all
+    /*
+    # include lab dir
+    !/lab
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: kust
+  namespace: flux-system
+spec:
+  interval: 10m
+  path: ./lab
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: lab-repo

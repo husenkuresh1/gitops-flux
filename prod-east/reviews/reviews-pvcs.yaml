@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: reviews-persistentvolumeclaim
+  namespace: reviews
+  annotations:
+    demo.gitops/stands-in-for: PersistentVolumeClaim
+data:
+  note: Placeholder for a PersistentVolumeClaim; the demo cluster does not run its
+    controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: reviews-persistentvolumeclaim-2
+  namespace: reviews
+  annotations:
+    demo.gitops/stands-in-for: PersistentVolumeClaim
+data:
+  note: Placeholder for a PersistentVolumeClaim; the demo cluster does not run its
+    controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: reviews-persistentvolumeclaim-3
+  namespace: reviews
+  annotations:
+    demo.gitops/stands-in-for: PersistentVolumeClaim
+data:
+  note: Placeholder for a PersistentVolumeClaim; the demo cluster does not run its
+    controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: reviews-persistentvolumeclaim-4
+  namespace: reviews
+  annotations:
+    demo.gitops/stands-in-for: PersistentVolumeClaim
+data:
+  note: Placeholder for a PersistentVolumeClaim; the demo cluster does not run its
+    controller.

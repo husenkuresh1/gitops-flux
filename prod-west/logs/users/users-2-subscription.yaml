@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: users-subscription-2
+  namespace: logs
+  annotations:
+    demo.gitops/stands-in-for: Subscription
+data:
+  note: Placeholder for a Subscription; the demo cluster does not run its controller.

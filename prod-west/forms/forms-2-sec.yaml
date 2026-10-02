@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: forms-2
+  namespace: forms
+type: Opaque
+stringData:
+  password: not-a-real-secret

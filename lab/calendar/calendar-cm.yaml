@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: calendar
+  namespace: calendar
+data:
+  greeting: hello from calendar

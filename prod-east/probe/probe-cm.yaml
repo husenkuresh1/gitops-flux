@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: probe
+  namespace: probe
+data:
+  greeting: hello from probe

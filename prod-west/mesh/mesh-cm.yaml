@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mesh
+  namespace: mesh
+data:
+  greeting: hello from mesh

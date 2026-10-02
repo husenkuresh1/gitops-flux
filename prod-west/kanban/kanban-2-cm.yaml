@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kanban-2
+  namespace: kanban
+data:
+  greeting: hello from kanban

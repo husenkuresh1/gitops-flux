@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: registry-5
+  namespace: registry
+type: Opaque
+stringData:
+  password: not-a-real-secret

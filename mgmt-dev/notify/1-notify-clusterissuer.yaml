@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: notify-clusterissuer
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: ClusterIssuer
+data:
+  note: Placeholder for a ClusterIssuer; the demo cluster does not run its controller.

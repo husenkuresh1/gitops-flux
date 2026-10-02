@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pricing
+  namespace: pricing
+data:
+  greeting: hello from pricing

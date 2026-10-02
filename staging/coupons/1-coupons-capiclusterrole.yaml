@@ -1,0 +1,100 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capiclusterrole
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CAPIClusterRole
+data:
+  note: Placeholder for a CAPIClusterRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capiclusterrolebinding
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CAPIClusterRoleBinding
+data:
+  note: Placeholder for a CAPIClusterRoleBinding; the demo cluster does not run its
+    controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capirole
+  namespace: coupons
+  annotations:
+    demo.gitops/stands-in-for: CAPIRole
+data:
+  note: Placeholder for a CAPIRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capirolebinding
+  namespace: coupons
+  annotations:
+    demo.gitops/stands-in-for: CAPIRoleBinding
+data:
+  note: Placeholder for a CAPIRoleBinding; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-user
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: User
+data:
+  note: Placeholder for a User; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capiclusterrole-2
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CAPIClusterRole
+data:
+  note: Placeholder for a CAPIClusterRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capiclusterrole-3
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CAPIClusterRole
+data:
+  note: Placeholder for a CAPIClusterRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capiclusterrole-4
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CAPIClusterRole
+data:
+  note: Placeholder for a CAPIClusterRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capiclusterrole-5
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CAPIClusterRole
+data:
+  note: Placeholder for a CAPIClusterRole; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-capiclusterrole-6
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CAPIClusterRole
+data:
+  note: Placeholder for a CAPIClusterRole; the demo cluster does not run its controller.

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: admin-4
+  namespace: admin
+type: Opaque
+stringData:
+  password: not-a-real-secret

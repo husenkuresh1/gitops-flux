@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: warehouse-2
+  namespace: warehouse
+type: Opaque
+stringData:
+  password: not-a-real-secret

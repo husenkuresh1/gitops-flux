@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: boards-3
+  namespace: boards
+type: Opaque
+stringData:
+  password: not-a-real-secret

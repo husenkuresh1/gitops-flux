@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-backendtlspolicy
+  namespace: coupons
+  annotations:
+    demo.gitops/stands-in-for: BackendTLSPolicy
+data:
+  note: Placeholder for a BackendTLSPolicy; the demo cluster does not run its controller.

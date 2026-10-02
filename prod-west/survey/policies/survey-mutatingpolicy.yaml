@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: survey-mutatingpolicy
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: MutatingPolicy
+data:
+  note: Placeholder for a MutatingPolicy; the demo cluster does not run its controller.

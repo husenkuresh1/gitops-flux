@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: users-httpendpoint
+  namespace: forum
+  annotations:
+    demo.gitops/stands-in-for: HTTPEndpoint
+data:
+  note: Placeholder for a HTTPEndpoint; the demo cluster does not run its controller.

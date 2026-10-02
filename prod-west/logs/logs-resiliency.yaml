@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logs-resiliency
+  namespace: logs
+  annotations:
+    demo.gitops/stands-in-for: Resiliency
+data:
+  note: Placeholder for a Resiliency; the demo cluster does not run its controller.

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sessions-deletingpolicy
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: DeletingPolicy
+data:
+  note: Placeholder for a DeletingPolicy; the demo cluster does not run its controller.

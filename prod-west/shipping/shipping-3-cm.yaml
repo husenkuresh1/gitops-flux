@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shipping-3
+  namespace: shipping
+data:
+  greeting: hello from shipping

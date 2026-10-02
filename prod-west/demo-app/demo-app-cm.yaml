@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-app
+  namespace: demo-app
+data:
+  greeting: hello from demo-app

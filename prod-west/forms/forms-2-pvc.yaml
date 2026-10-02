@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: forms-persistentvolumeclaim-2
+  namespace: forms
+  annotations:
+    demo.gitops/stands-in-for: PersistentVolumeClaim
+data:
+  note: Placeholder for a PersistentVolumeClaim; the demo cluster does not run its
+    controller.

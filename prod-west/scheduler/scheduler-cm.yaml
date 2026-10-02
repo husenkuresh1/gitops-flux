@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scheduler
+  namespace: scheduler
+data:
+  greeting: hello from scheduler

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quotes
+  namespace: quotes
+data:
+  greeting: hello from quotes

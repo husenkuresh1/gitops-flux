@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logs-2
+  namespace: logs
+data:
+  greeting: hello from logs

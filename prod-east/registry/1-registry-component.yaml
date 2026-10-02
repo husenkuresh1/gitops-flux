@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: registry-component
+  namespace: registry
+  annotations:
+    demo.gitops/stands-in-for: Component
+data:
+  note: Placeholder for a Component; the demo cluster does not run its controller.

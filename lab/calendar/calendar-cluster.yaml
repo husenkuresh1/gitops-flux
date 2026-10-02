@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: calendar-cluster
+  namespace: calendar
+  annotations:
+    demo.gitops/stands-in-for: Cluster
+data:
+  note: Placeholder for a Cluster; the demo cluster does not run its controller.

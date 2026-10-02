@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: hr-2
+  namespace: hr
+type: Opaque
+stringData:
+  password: not-a-real-secret

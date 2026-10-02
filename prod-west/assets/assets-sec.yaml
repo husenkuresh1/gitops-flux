@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: assets
+  namespace: assets
+type: Opaque
+stringData:
+  password: not-a-real-secret

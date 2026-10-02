@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: chat-2
+  namespace: chat
+type: Opaque
+stringData:
+  password: not-a-real-secret

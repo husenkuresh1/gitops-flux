@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: canary-customresourcedefinition
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.

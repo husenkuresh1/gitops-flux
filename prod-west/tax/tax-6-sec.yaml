@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: tax-6
+  namespace: tax
+type: Opaque
+stringData:
+  password: not-a-real-secret

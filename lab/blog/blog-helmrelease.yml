@@ -1,0 +1,25 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: blog
+  namespace: news
+spec:
+  interval: 1h
+  chart:
+    spec:
+      chart: podinfo
+      version: 6.*
+      sourceRef:
+        kind: HelmRepository
+        name: status
+        namespace: news
+  values:
+    replicaCount: 1
+    ui:
+      message: Hello from blog
+    resources:
+      requests:
+        cpu: 5m
+        memory: 16Mi
+      limits:
+        memory: 64Mi

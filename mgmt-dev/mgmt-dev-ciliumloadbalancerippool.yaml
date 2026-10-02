@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mgmt-dev-ciliumloadbalancerippool
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CiliumLoadBalancerIPPool
+data:
+  note: Placeholder for a CiliumLoadBalancerIPPool; the demo cluster does not run
+    its controller.

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: crm
+  namespace: crm
+data:
+  greeting: hello from crm

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-envoyproxy
+  namespace: images
+  annotations:
+    demo.gitops/stands-in-for: EnvoyProxy
+data:
+  note: Placeholder for a EnvoyProxy; the demo cluster does not run its controller.

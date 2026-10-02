@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: metrics-httproute
+  namespace: metrics
+  annotations:
+    demo.gitops/stands-in-for: HTTPRoute
+data:
+  note: Placeholder for a HTTPRoute; the demo cluster does not run its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: metrics-httproute-2
+  namespace: metrics
+  annotations:
+    demo.gitops/stands-in-for: HTTPRoute
+data:
+  note: Placeholder for a HTTPRoute; the demo cluster does not run its controller.

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logs-httproute
+  namespace: logs
+  annotations:
+    demo.gitops/stands-in-for: HTTPRoute
+data:
+  note: Placeholder for a HTTPRoute; the demo cluster does not run its controller.

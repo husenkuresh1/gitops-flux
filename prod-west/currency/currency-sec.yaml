@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: currency
+  namespace: currency
+type: Opaque
+stringData:
+  password: not-a-real-secret

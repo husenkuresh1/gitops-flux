@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ingest
+  namespace: ingest
+data:
+  greeting: hello from ingest

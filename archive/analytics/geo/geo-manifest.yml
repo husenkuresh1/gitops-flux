@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: geo-manifest
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: Manifest
+data:
+  note: Placeholder for a Manifest; the demo cluster does not run its controller.

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-udproute
+  namespace: support
+  annotations:
+    demo.gitops/stands-in-for: UDPRoute
+data:
+  note: Placeholder for a UDPRoute; the demo cluster does not run its controller.

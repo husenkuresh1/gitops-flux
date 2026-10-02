@@ -1,0 +1,25 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: deploy
+  namespace: deploy
+spec:
+  interval: 1h
+  chart:
+    spec:
+      chart: podinfo
+      version: 6.*
+      sourceRef:
+        kind: HelmRepository
+        name: deploy
+        namespace: flux-system
+  values:
+    replicaCount: 0
+    ui:
+      message: Hello from deploy
+    resources:
+      requests:
+        cpu: 5m
+        memory: 16Mi
+      limits:
+        memory: 64Mi

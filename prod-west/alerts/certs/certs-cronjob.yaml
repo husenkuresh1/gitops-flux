@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: certs-cronjob
+  namespace: alerts
+  annotations:
+    demo.gitops/stands-in-for: CronJob
+data:
+  note: Placeholder for a CronJob; the demo cluster does not run its controller.

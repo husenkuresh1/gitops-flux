@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: deals-l2advertisement
+  namespace: deals
+  annotations:
+    demo.gitops/stands-in-for: L2Advertisement
+data:
+  note: Placeholder for a L2Advertisement; the demo cluster does not run its controller.

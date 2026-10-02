@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: uptime
+  namespace: uptime
+data:
+  greeting: hello from uptime

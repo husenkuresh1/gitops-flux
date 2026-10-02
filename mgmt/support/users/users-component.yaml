@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: users-component
+  namespace: support
+  annotations:
+    demo.gitops/stands-in-for: Component
+data:
+  note: Placeholder for a Component; the demo cluster does not run its controller.

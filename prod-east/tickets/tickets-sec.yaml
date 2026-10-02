@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: tickets
+  namespace: tickets
+type: Opaque
+stringData:
+  password: not-a-real-secret

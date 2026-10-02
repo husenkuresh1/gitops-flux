@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: maps-3
+  namespace: maps
+type: Opaque
+stringData:
+  password: not-a-real-secret

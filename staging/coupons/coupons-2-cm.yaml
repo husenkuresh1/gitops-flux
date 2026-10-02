@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupons-2
+  namespace: coupons
+data:
+  greeting: hello from coupons

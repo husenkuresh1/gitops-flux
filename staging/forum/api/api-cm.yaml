@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api
+  namespace: forum
+data:
+  greeting: hello from api

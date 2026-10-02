@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tax-networkpolicy
+  namespace: tax
+  annotations:
+    demo.gitops/stands-in-for: NetworkPolicy
+data:
+  note: Placeholder for a NetworkPolicy; the demo cluster does not run its controller.

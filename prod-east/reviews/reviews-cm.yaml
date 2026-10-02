@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: reviews
+  namespace: reviews
+data:
+  greeting: hello from reviews

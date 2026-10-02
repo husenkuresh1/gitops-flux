@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tickets
+  namespace: tickets
+data:
+  greeting: hello from tickets

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: preview
+  namespace: preview
+data:
+  greeting: hello from preview

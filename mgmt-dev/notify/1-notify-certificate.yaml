@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: notify-certificate
+  namespace: notify
+  annotations:
+    demo.gitops/stands-in-for: Certificate
+data:
+  note: Placeholder for a Certificate; the demo cluster does not run its controller.

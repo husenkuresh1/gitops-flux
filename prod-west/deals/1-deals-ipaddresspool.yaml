@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: deals-ipaddresspool
+  namespace: deals
+  annotations:
+    demo.gitops/stands-in-for: IPAddressPool
+data:
+  note: Placeholder for a IPAddressPool; the demo cluster does not run its controller.

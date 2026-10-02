@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: login-2
+  namespace: login
+data:
+  greeting: hello from login

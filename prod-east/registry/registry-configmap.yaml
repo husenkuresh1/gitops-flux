@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: registry-2
+  namespace: registry
+data:
+  greeting: hello from registry

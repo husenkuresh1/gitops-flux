@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: proxy
+  namespace: proxy
+data:
+  greeting: hello from proxy

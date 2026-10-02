@@ -1,0 +1,109 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-9
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-10
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-11
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-12
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-13
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-14
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-15
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-16
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-17
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: images-customresourcedefinition-18
+  namespace: default
+  annotations:
+    demo.gitops/stands-in-for: CustomResourceDefinition
+data:
+  note: Placeholder for a CustomResourceDefinition; the demo cluster does not run
+    its controller.

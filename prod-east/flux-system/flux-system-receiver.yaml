@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-flux-system-receiver
+  namespace: flux-system
+  annotations:
+    demo.gitops/stands-in-for: Receiver
+data:
+  note: Placeholder for a Receiver; the demo cluster does not run its controller.

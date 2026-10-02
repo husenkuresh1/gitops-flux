@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: canary-plan
+  namespace: canary
+  annotations:
+    demo.gitops/stands-in-for: Plan
+data:
+  note: Placeholder for a Plan; the demo cluster does not run its controller.

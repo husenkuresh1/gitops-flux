@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: scheduler-5
+  namespace: scheduler
+type: Opaque
+stringData:
+  password: not-a-real-secret
