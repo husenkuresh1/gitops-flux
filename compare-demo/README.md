@@ -27,6 +27,16 @@ Each cluster has two Flux Kustomizations, `apps` (HelmReleases in namespace
 
 All secret-looking values here are fake demo strings.
 
+## Before the demo (2 minutes)
+
+1. Both clusters healthy: `flux --context default get hr -n shop` and
+   `flux --context kind-staging get hr -n shop`; only prod `payments` is `False`.
+2. Sign in to Headlamp, then open **dev-peter-prod** and **dev-staging** once each
+   from Home. Headlamp only holds an apexkube token for clusters opened through
+   the cluster chooser; a cluster that was never opened shows "Unauthorized" in
+   every layer of the comparison.
+3. Open Compare and run step 1 once, so the first live click is fast.
+
 ## Demo script (about 5 minutes)
 
 Open Headlamp → **Compare**.
@@ -45,6 +55,10 @@ Open Headlamp → **Compare**.
 5. **Plain Kustomize.** Pick Kustomization `flux-system/status-page` on both sides.
    Source shows the changed files; Rendered is "not applicable"; Live shows the
    ConfigMap banner change and the Secret compared by hash.
+   The headline points at the Flux intent because `spec.path` differs
+   (`clusters/prod/…` vs `clusters/staging/…`). That difference is expected in a
+   folder-per-environment repo, and it is the motivating example for
+   "expected-difference rules" on the roadmap.
 6. **Whole environment.** Pick Kustomization `flux-system/apps`. Source lists
    `search.yaml` (prod only) and `reviews.yaml` (staging only); Live lists
    `HelmRelease search` and `HelmRelease reviews` as one-sided.
