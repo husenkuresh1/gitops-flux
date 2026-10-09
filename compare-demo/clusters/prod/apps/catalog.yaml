@@ -14,9 +14,9 @@ spec:
         kind: HelmRepository
         name: podinfo
   values:
-    replicaCount: 2
+    replicaCount: 3
     ui:
-      message: "Catalog (production)"
+      message: "Catalog (production) - spring sale"
     resources:
       requests:
         cpu: 5m
