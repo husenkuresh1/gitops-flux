@@ -1,0 +1,41 @@
+# Apply once per cluster: kubectl apply -f bootstrap/prod.yaml
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: compare-demo
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/husenkuresh1/gitops-flux
+  ref:
+    branch: main
+  ignore: |
+    # only the demo folder goes into the artifact
+    /*
+    !/compare-demo/
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: apps
+  namespace: flux-system
+spec:
+  interval: 2m
+  path: ./compare-demo/clusters/prod/apps
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: compare-demo
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: status-page
+  namespace: flux-system
+spec:
+  interval: 2m
+  path: ./compare-demo/clusters/prod/status-page
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: compare-demo

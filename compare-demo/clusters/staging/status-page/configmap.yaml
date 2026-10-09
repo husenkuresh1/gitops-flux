@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: status-page
+data:
+  banner: "Maintenance window Sat 02:00-04:00 UTC"
+  color: "#ed6c02"
