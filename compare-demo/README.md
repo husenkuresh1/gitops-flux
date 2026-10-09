@@ -19,7 +19,7 @@ Each cluster has two Flux Kustomizations, `apps` (HelmReleases in namespace
 | storefront | HelmRelease | podinfo 6.15.0 | podinfo 6.15.0 | **No differences.** Different clusters, UIDs and timestamps are filtered out. |
 | checkout | HelmRelease | chart **6.14.0** | chart 6.15.0 | **Both healthy, different versions.** Intent (chart version), source (`Chart.yaml`), rendered manifest and runtime image digest all differ. |
 | payments | HelmRelease | image tag **6.15.1-hotfix** (does not exist) | 6.15.0 | **Works on staging, broken on prod.** Intent shows the values change and Ready=False; runtime shows 0/1 ready and image-pull events. |
-| catalog | HelmRelease | 2 replicas, `logLevel: warn` | 1 replica, `logLevel: debug` | **Same version, environment-specific config.** The fake `auth.apiToken` differs and is shown only as a hash. |
+| catalog | HelmRelease | 3 replicas, `logLevel: info` (3 Helm revisions) | 1 replica, `logLevel: debug` | **Same version, environment-specific config.** The fake `auth.apiToken` differs and is shown only as a hash. On prod it also has release history (see step 7). |
 | search | HelmRelease | yes (legacy, chart 6.13.0) | — | Exists on one side only. |
 | reviews | HelmRelease | — | yes (beta) | Exists on one side only. |
 | status-page | Kustomization (plain YAML) | banner "All systems operational" | banner "Maintenance window…" | **Kustomize path:** source files differ (`configmap.yaml`, `secret.yaml`), live ConfigMap differs, Secret compared by hash, no rendered layer. |
@@ -62,7 +62,13 @@ Open Headlamp → **Compare**.
 6. **Whole environment.** Pick Kustomization `flux-system/apps`. Source lists
    `search.yaml` (prod only) and `reviews.yaml` (staging only); Live lists
    `HelmRelease search` and `HelmRelease reviews` as one-sided.
-7. **Share.** Copy link: the comparison is fully described by the URL.
+7. **Release history (one cluster).** Switch to **Release history**, pick
+   `dev-peter-prod` / `shop/catalog`. It opens on v2 against v3: only `logLevel`
+   `info` vs `warn` in the values and the Deployment's `--level` flag. Pick v1
+   against v3 to see every change since the first install: replicas 2 → 3, the
+   sale message, the log level. Intent, source, live and runtime show "not
+   applicable": Kubernetes keeps no past state for them, only Helm storage does.
+8. **Share.** Copy link: the comparison is fully described by the URL.
 
 ## Reset
 
