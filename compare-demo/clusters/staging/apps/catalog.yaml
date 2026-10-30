@@ -14,15 +14,15 @@ spec:
         kind: HelmRepository
         name: podinfo
   values:
-    replicaCount: 1
+    replicaCount: 3
     ui:
-      message: "Catalog (staging)"
+      message: "Catalog (production) - spring sale"
     resources:
       requests:
         cpu: 5m
         memory: 16Mi
       limits:
         memory: 64Mi
-    logLevel: debug
+    logLevel: info
     auth:
-      apiToken: fake-staging-token-not-a-real-secret
+      apiToken: fake-prod-token-not-a-real-secret
