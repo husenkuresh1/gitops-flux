@@ -23,5 +23,3 @@ spec:
         memory: 16Mi
       limits:
         memory: 64Mi
-    image:
-      tag: 6.15.1-hotfix
