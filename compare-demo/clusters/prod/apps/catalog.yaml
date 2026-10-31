@@ -14,7 +14,7 @@ spec:
         kind: HelmRepository
         name: podinfo
   values:
-    replicaCount: 3
+    replicaCount: 1
     ui:
       message: "Catalog (production) - spring sale"
     resources:
@@ -23,6 +23,6 @@ spec:
         memory: 16Mi
       limits:
         memory: 64Mi
-    logLevel: info
+    logLevel: debug
     auth:
       apiToken: fake-prod-token-not-a-real-secret
